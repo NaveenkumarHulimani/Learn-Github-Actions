@@ -13,8 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
             `;
             taskList.appendChild(li);
             taskInput.value = "";
-
-            // Add event listener to delete button
             const deleteButton = li.querySelector(".delete");
             deleteButton.addEventListener("click", function () {
                 taskList.removeChild(li);
